@@ -15,4 +15,14 @@ app.post('/notes', (req,res)  => {
 })
 
 
+app.get('/notes',(req,res) => {
+    
+      res.status(200).json({
+         message : "notes fetched succesfully ",
+          notes: notes // jo bhi notes notes aaray me honge unhe bhi bhej do 
+      })
+      
+})
+
+
  module.exports = app 
